@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<?import javafx.scene.control.Button?>
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.WindowClientController">
+   <children>
+      <CheckBox fx:id="boxDel" onAction="#bd" layoutX="257.0" layoutY="53.0" text="Удалить повторяющиеся символы" StackPane.alignment="TOP_LEFT">
+      </CheckBox>
+      <CheckBox fx:id="boxSum" onAction="#bsum" layoutX="17.0" layoutY="86.0" text="Конкатенация введенных букв" StackPane.alignment="TOP_LEFT">
+      </CheckBox>
+      <CheckBox fx:id="boxClear" onAction="#bc" layoutX="257.0" layoutY="86.0" text="Очистка массива" StackPane.alignment="TOP_LEFT">
+      </CheckBox>
+      <TextField fx:id="text" layoutX="17.0" layoutY="14.0" prefHeight="25.0" prefWidth="569.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="14.0" StackPane.alignment="TOP_CENTER" />
+      <CheckBox fx:id="boxSend" onAction="#bsend" layoutX="17.0" layoutY="53.0" text="Отправить " />
+      <Label layoutX="17.0" layoutY="183.0" text="Ответ с сервера:" />
+      <TextArea fx:id="answer" layoutX="19.0" layoutY="200.0" prefHeight="157.0" prefWidth="566.0" scrollTop="Infinity" />
+      <Button layoutX="17.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnSend" text="Отправить данные на сервер и получить ответ" />
+   </children>
+</AnchorPane>
